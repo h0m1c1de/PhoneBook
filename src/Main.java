@@ -11,21 +11,7 @@ public class Main {
         while(true) {
             menu();
         }
-//        String s1, s2;
-//        Scanner in = new Scanner(System.in);
-//
-//        System.out.println("Enter the first string");
-//        s1 = in.nextLine();
-//
-//        System.out.println("Enter the second string");
-//        s2 = in.nextLine();
-//
-//        if ( s1.compareTo(s2) > 0 )
-//            System.out.println("First string is greater than second.");
-//        else if ( s1.compareTo(s2) < 0 )
-//            System.out.println("First string is smaller than second.");
-//        else
-//            System.out.println("Both strings are equal.");
+
 
     }
     private static void menu(){
@@ -52,13 +38,18 @@ public class Main {
     private static void add(){
         Scanner in = new Scanner(System.in);
         String name,number;
+        int age;
         System.out.println("Enter User name");
         name = in.nextLine();
 
         System.out.println("Enter number");
         number = in.nextLine();
-        String s1, s2;
-         book.add(name, number);
+
+        System.out.println("Enter age");
+        age = in.nextInt();
+
+         book.add(name, number, age);
+
 
 
 
